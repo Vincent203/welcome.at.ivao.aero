@@ -1,0 +1,10 @@
+<IfModule mod_headers.c>
+  Header set Access-Control-Allow-Origin "*"
+</IfModule>
+<Files "autoloader.php">  
+  Deny from all
+  allow from localhost
+</Files>
+<Files "index.php">  
+  allow from all
+</Files>
